@@ -1,7 +1,6 @@
 from django.http.response import JsonResponse
 from rest_framework.parsers import JSONParser
 from rest_framework import status
-
 from appointment.models import Appointment, Scheduled
 from appointment.serializers import AppointmentSerializer, ScheduledSerializer
 from rest_framework.decorators import api_view
@@ -52,16 +51,17 @@ def appointment_match(request):
         candidate = Appointment.objects.get(id=candidate_id)
     except Appointment.DoesNotExist:
         return JsonResponse({'message': 'The appointment does not exist'}, status=status.HTTP_404_NOT_FOUND)
-    interviewer_slot = range(int(interviewer.start_time), int(interviewer.end_time))
-    candidate_slot = range(int(candidate.start_time), int(candidate.end_time))
+    interviewer_slot = range(interviewer.start_time, interviewer.end_time)
+    candidate_slot = range(candidate.start_time, candidate.end_time)
     x_interviewer = set(interviewer_slot)
     slot = x_interviewer.intersection(candidate_slot)
+    appointment_time = 1
     slots_start = []
     slots_end = []
     for x in slot:
         slots_start.append(x)
     for x in slot:
-        slots_end.append(x+1)
+        slots_end.append(x+appointment_time)
     slots = list(zip(slots_start, slots_end))
     return JsonResponse({'Matching Slots': slots}, status=status.HTTP_200_OK)
 
