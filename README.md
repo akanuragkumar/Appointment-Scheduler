@@ -70,11 +70,7 @@ Status- 201 Created
 Status- 200 OK  
     
 ```
-3. `DELETE /api/schedule` 
-
-```json
-{"id":1}
-```
+3. `DELETE /api/schedule?id=1` 
 
 ##### `response`
 
@@ -115,11 +111,8 @@ Status- 201 Created
 Status- 200 OK  
     
 ```
-3. `DELETE /api/scheduled` 
+3. `DELETE /api/scheduled?id=1` 
 
-```json
-{"id":1}
-```
 
 ##### `response`
 
