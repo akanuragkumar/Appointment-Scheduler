@@ -49,7 +49,7 @@ Appointment-Scheduler/                         # All application code in this di
 ```
 ## API Documentation 
 
-### `Takes the candidate/interview details and their available time-slot` 
+### `This Endpoint takes the candidate/interview details and their available time-slot` 
 
 1. `POST /api/schedule` 
 
