@@ -43,7 +43,7 @@ def appointment(request):
 
 @api_view(['GET'])
 def appointment_match(request):
-    """This Endpoint returns candidate_id, interviewer_id and their matching time-slots"""
+    """This Endpoint takes candidate_id, interviewer_id, date and returns their matching time-slots"""
     try:
         interviewer_id = request.GET["interviewer_id"]
         candidate_id = request.GET["candidate_id"]
