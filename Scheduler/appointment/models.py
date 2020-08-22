@@ -6,13 +6,13 @@ class Appointment(models.Model):
     name = models.CharField(max_length=200)
     email = models.EmailField(unique=True)
     phone = models.IntegerField()
-    date = models.CharField(max_length=70, null=True)
-    start_time = models.CharField(max_length=70, null=True)
-    end_time = models.CharField(max_length=70, null=True)
+    date = models.CharField(max_length=70)
+    start_time = models.IntegerField()
+    end_time = models.IntegerField()
 
 
 class Scheduled(models.Model):
     interviewer_id = models.IntegerField()
     candidate_id = models.IntegerField()
-    start_time = models.IntegerField(null=True)
-    end_time = models.IntegerField(null=True)
+    start_time = models.IntegerField()
+    end_time = models.IntegerField()
