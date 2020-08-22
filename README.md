@@ -9,6 +9,7 @@ To work in a sandboxed Python environment it is recommended to install the app i
     ```bash
     $ cd Appointment-Scheduler
     $ pip install -r requirements.txt
+    $ cd Scheduler
     ```
 2. Install Mongo
 
