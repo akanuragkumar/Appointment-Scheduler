@@ -91,7 +91,7 @@ Status- 200 OK
 ##### `response`
 
 ```json
- application/json - {"Matching Slots":[(11,1),(12,13),(13,14)]}
+ application/json - {"Matching Slots":[[11,1],[12,13],[13,14]]}
 ```
 
 ### `This Endpoint takes candidate_id, interviewer_id and their preferred matching time-slots` 
