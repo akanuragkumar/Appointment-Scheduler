@@ -47,8 +47,9 @@ def appointment_match(request):
     try:
         interviewer_id = request.GET["interviewer_id"]
         candidate_id = request.GET["candidate_id"]
-        interviewer = Appointment.objects.get(id=interviewer_id)
-        candidate = Appointment.objects.get(id=candidate_id)
+        date = request.GET["date"]
+        interviewer = Appointment.objects.get(id=interviewer_id, date=date)
+        candidate = Appointment.objects.get(id=candidate_id, date=date)
     except Appointment.DoesNotExist:
         return JsonResponse({'message': 'The appointment does not exist'}, status=status.HTTP_404_NOT_FOUND)
     interviewer_slot = range(interviewer.start_time, interviewer.end_time)
