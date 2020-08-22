@@ -24,11 +24,14 @@ To work in a sandboxed Python environment it is recommended to install the app i
    ```bash
    $ pytest
    ```   
+### [Link for questionnaire](https://github.com/akanuragkumar/hiring_assignment/blob/master/8a46cdd1-c81a-4e6b-880c-9cb8f4bca9c9.pdf)  
+### [Link for screenshots of API response](https://github.com/akanuragkumar/hiring_assignment/blob/master/mailer.png)
+   
 ## Project Structure
 
 ### Backend 
 ```shell
-Appointment-Scheduler/                                   # All application code in this directory.
+Appointment-Scheduler/                         # All application code in this directory.
 │
 ├─ Scheduler/ ─────┐-- __init__.py             # initializing file for Django module.
 │                  ├── asgi.py                 # standard interface between web servers, frameworks, and applications.    
