@@ -1,5 +1,5 @@
 # Appointment-Scheduler
-Schedule your appointments with ease through Appointment-scheduler
+Schedule your appointments with ease through Appointment-scheduler.
 ## Quickstart
 
 To work in a sandboxed Python environment it is recommended to install the app in a Python [virtualenv](https://pypi.python.org/pypi/virtualenv).
