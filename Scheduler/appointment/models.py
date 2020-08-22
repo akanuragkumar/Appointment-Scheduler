@@ -5,7 +5,7 @@ class Appointment(models.Model):
     role = models.CharField(max_length=70)
     name = models.CharField(max_length=200)
     email = models.EmailField(unique=True)
-    phone = models.IntegerField()
+    phone = models.CharField(max_length=12)
     date = models.CharField(max_length=70)
     start_time = models.IntegerField()
     end_time = models.IntegerField()
