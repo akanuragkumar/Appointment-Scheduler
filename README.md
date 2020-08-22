@@ -4,9 +4,10 @@ Schedule your appointments with ease through Appointment-scheduler.
 
 To work in a sandboxed Python environment it is recommended to install the app in a Python [virtualenv](https://pypi.python.org/pypi/virtualenv).
 
-1. Install dependencies
+1. Clone and install dependencies
 
     ```bash
+    $ git clone https://github.com/akanuragkumar/Appointment-Scheduler.git
     $ cd Appointment-Scheduler
     $ pip install -r requirements.txt
     $ cd Scheduler
