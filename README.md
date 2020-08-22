@@ -10,7 +10,7 @@ To work in a sandboxed Python environment it is recommended to install the app i
     $ cd Appointment-Scheduler
     $ pip install -r requirements.txt
     ```
-2. Install Mongo- https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
+2. Install Mongo
 
    If MongoDB is not installed then follow these steps to install [MongoDB](https://docs.mongodb.com/manual/tutorial/).   
 
