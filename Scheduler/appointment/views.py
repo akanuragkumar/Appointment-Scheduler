@@ -19,8 +19,8 @@ def appointment(request):
 
     elif request.method == 'DELETE':
         try:
-            data = JSONParser().parse(request)
-            appointment_delete = Appointment.objects.get(id=data['id'])
+            id = request.GET["id"]
+            appointment_delete = Appointment.objects.get(id=id)
         except Appointment.DoesNotExist:
             return JsonResponse({'message': 'The appointment does not exist'}, status=status.HTTP_404_NOT_FOUND)
         appointment_delete.delete()
@@ -80,8 +80,8 @@ def scheduled(request):
 
     elif request.method == 'DELETE':
         try:
-            data = JSONParser().parse(request)
-            scheduled_delete = Scheduled.objects.get(id=data['id'])
+            id = request.GET["id"]
+            scheduled_delete = Scheduled.objects.get(id=id)
         except Scheduled.DoesNotExist:
             return JsonResponse({'message': 'The appointment does not exist'}, status=status.HTTP_404_NOT_FOUND)
         scheduled_delete.delete()
