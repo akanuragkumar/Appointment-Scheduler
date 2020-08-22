@@ -10,8 +10,11 @@ To work in a sandboxed Python environment it is recommended to install the app i
     $ cd Appointment-Scheduler
     $ pip install -r requirements.txt
     ```
+2. Install Mongo- https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
 
-2. Running app
+   If MongoDB is not installed then follow these steps to install [MongoDB](https://docs.mongodb.com/manual/tutorial/).   
+
+3. Running app
 
    ```bash
    $ python manage.py makemigrations appointment
@@ -19,11 +22,6 @@ To work in a sandboxed Python environment it is recommended to install the app i
    $ python manage.py runserver
    ```   
    
-3. Running test-cases while server is running
-
-   ```bash
-   $ pytest
-   ```   
 ### [Link for questionnaire](https://github.com/akanuragkumar/hiring_assignment/blob/master/8a46cdd1-c81a-4e6b-880c-9cb8f4bca9c9.pdf)  
 ### [Link for screenshots of API response](https://github.com/akanuragkumar/Appointment-Scheduler/tree/master/screenshots)
    
