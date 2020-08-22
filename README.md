@@ -84,7 +84,7 @@ Status- 200 OK
 {"message": "appointment was deleted successfully!"}
     
 ```
-### `This Endpoint returns candidate_id, interviewer_id and their matching time-slots` 
+### `This Endpoint takes candidate_id, interviewer_id, date and returns their matching time-slots for that date` 
 
 1. `GET /api/appointment?candidate_id=1&interviewer_id=2&date=22/08/2020` 
 
