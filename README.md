@@ -86,7 +86,7 @@ Status- 200 OK
 ```
 ### `This Endpoint returns candidate_id, interviewer_id and their matching time-slots` 
 
-1. `GET /api/appointment?candidate_id=1&interviewer_id=2` 
+1. `GET /api/appointment?candidate_id=1&interviewer_id=2&date=22/08/2020` 
 
 ##### `response`
 
