@@ -94,7 +94,7 @@ Status- 200 OK
  application/json - {"Matching Slots":[[11,1],[12,13],[13,14]]}
 ```
 
-### `This Endpoint takes candidate_id, interviewer_id and their preferred matching time-slots` 
+### `This Endpoint takes candidate_id, interviewer_id and their preferred matching time-slots and creates an entry in DB` 
 
 1. `POST /api/scheduled` 
 
