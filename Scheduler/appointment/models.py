@@ -15,5 +15,6 @@ class Appointment(models.Model):
 class Scheduled(models.Model):
     interviewer_id = models.IntegerField()
     candidate_id = models.IntegerField()
+    date = models.CharField(max_length=70)
     start_time = models.IntegerField(validators=[MinValueValidator(0), MaxValueValidator(23)])
     end_time = models.IntegerField(validators=[MinValueValidator(0), MaxValueValidator(23)])
