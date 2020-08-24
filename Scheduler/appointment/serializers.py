@@ -19,5 +19,6 @@ class ScheduledSerializer(serializers.ModelSerializer):
         model = Scheduled
         fields = ('interviewer_id',
                   'candidate_id',
+                  'date',
                   'start_time',
                   'end_time')

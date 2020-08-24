@@ -95,7 +95,7 @@ Status- 200 OK
 1. `POST /api/scheduled` 
 
 ```json
- application/json - {"interviewer_id":"7","candidate_id":"8","start_time":"12","end_time":"13"}
+ application/json - {"interviewer_id":"1","candidate_id":"2","date":"23/08/2020","start_time":"12","end_time":"13"}
 ```
 ##### `response`
 
@@ -105,7 +105,7 @@ Status- 201 Created
 2. `PUT /api/scheduled` 
 
 ```json
- application/json - {"id":"1","role":"Candidate","name":"Anurag Kumar","email":"akanuragkumar711@gmail.com","phone":"2147483641","date":"23/08/2020","start_time":"10","end_time":"14"}
+ application/json - {"id":"1","interviewer_id":"1","candidate_id":"2","date":"23/08/2020","start_time":"12","end_time":"13"}
 ```
 ##### `response`
 
@@ -127,5 +127,5 @@ Status- 200 OK
 ##### `response`
 
 ```json
- application/json - [{"interviewer_id":7,"candidate_id":8,"start_time":11,"end_time":12}]
+ application/json - [{"interviewer_id":"1","candidate_id":"2","date":"23/08/2020","start_time":"12","end_time":"13"}]
 ```
